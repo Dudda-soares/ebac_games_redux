@@ -58,14 +58,10 @@ export const Plataformas = styled.ul`
     font-weight: bold;
   }
 `
-export const BtnComprar = styled.button`
+export const BtnComprar = styled.button<React.ButtonHTMLAttributes<HTMLButtonElement>>`
   display: block;
   width: 100%;
-  background-image: linear-gradient(
-    45deg,
-    ${cores.corPrincipal},
-    ${cores.corSecundaria}
-  );
+  background-image: linear-gradient(45deg, ${cores.corPrincipal}, ${cores.corSecundaria});
   font-weight: bold;
   font-size: 16px;
   padding: 12px 0;
@@ -76,10 +72,6 @@ export const BtnComprar = styled.button`
   border-radius: 4px;
 
   &:hover {
-    background-image: linear-gradient(
-      -45deg,
-      ${cores.corPrincipal},
-      ${cores.corSecundaria}
-    );
+    background-image: linear-gradient(-45deg, ${cores.corPrincipal}, ${cores.corSecundaria});
   }
 `
